@@ -24,6 +24,12 @@ function changebginit(){
     document.getElementById('title-projet').style.color = "white";
 }
 
-
-  
+$(document).scroll(function() {
+    var y = $(this).scrollTop();
+    if (y > 400) {
+      $('#backtop').show();
+    } else {
+      $('#backtop').hide();
+    }
+  });
  
